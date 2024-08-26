@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <h1>Sample Survey Form</h1>
+    <form action="backend.php">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="myname"></td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="date" name="mydob"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="mygender">Male
+                <input type="radio" name="mygender">Female
+                <input type="radio" name="mygender">Others</td>
+
+            </tr>
+
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="mycity" id="city" required></td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="number" name="mymobile" required></td>
+            </tr>
+            <tr>
+                <td>Email Id</td>
+                <td><input type="email" name="myemail"></td>
+            </tr>
+            <tr>
+                <td for="graduation">Education</td>
+                <td><select name="myeducation" id="graduation">
+                        <option value="10th" selected>10th</option>
+                        <option value="12th">12th</option>
+                        <option value="ug">UG</option>
+                        <option value="Pg">PG</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Courses Offered</td>
+                <td> <select name="mycourse" id="course">
+                        <option value="none" selected>None</option>
+                        <option value="MySQL">MySQL</option>
+                        <option value="python">Python</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="ml">Machine Learning</option>
+                        <option value="blockchain">Blockchain</option>
+                    </select>
+                </td>
+            </tr>
+            <td>
+                <input type="reset">
+            </td>
+            <td>
+                <input type="submit">
+            </td>
+       </table>
+       <label><input type="checkbox" name="conditions">
+        I accept all the Terms and conditions</label>
+
+    </form>
+</body>
+
+
+</html>
